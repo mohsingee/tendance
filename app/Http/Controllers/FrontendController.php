@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cms;
 use App\Models\ContactSubmission;
 use App\Models\Register_user;
+use App\Models\Shop;
 use App\Models\User;
 use App\Models\Registration_submissions;
 use App\Models\Contact_submissions;
@@ -39,7 +40,9 @@ class FrontendController extends Controller
     }
 
     public function shop(){
-        return view('frontend.pages.shop');
+        $shops = Shop::orderBy('id','desc')->paginate(12);
+        $count = Shop::count();
+        return view('frontend.pages.shop',compact('shops','count'));
     }
 
     public function stores(){
@@ -148,5 +151,10 @@ class FrontendController extends Controller
         ];
 
         return redirect(route('page.contact'))->with('success', 'Your data added successfully!');
+    }
+
+    public function shopDetail($id){
+        $shop = Shop::find($id);
+        return view('frontend.pages.shop_detail',compact('shop'));
     }
 }

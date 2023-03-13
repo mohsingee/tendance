@@ -5,7 +5,7 @@
                 <div class="col-xl-3 col-lg-2 col-4">
                     <div class="logo">
                         <a href="{{ route('/') }}">
-                            <img src="{{ asset('assets/frontend/img/logo/Logo-Tendance-Optique.png') }}" alt="chasmishco Logo">
+                            <img src="{{ asset('assets/images/'.favicon()->front_logo) }}" alt="chasmishco Logo">
                         </a>
                     </div>
                 </div>

@@ -34,7 +34,7 @@ function url_title($str, $separator = '-', $lowercase = FALSE)
 
 function favicon()
 {
-	$settings = DB::table('settings')->where('id', '1')->select('logo', 'favicon', 'footer_text')->first();
+	$settings = DB::table('settings')->where('id', '1')->select('logo', 'favicon', 'footer_text','front_logo','front_favicon')->first();
 	return $settings;
 }
 

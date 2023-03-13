@@ -46,6 +46,14 @@
                                 <span class="nav-title">Contactez-Nous</span>
                             </a>
                         </li>
+                        <li class="{{ Route::is('shop.index ') ? 'selected' : '' }}">
+                            <a href="{{ route('shop.index') }}">
+                                <span class="has-icon">
+                                    <i class="icon-text"></i>
+                                </span>
+                                <span class="nav-title">Essayage</span>
+                            </a>
+                        </li>
                         <li class="{{ Route::is('setting.index') ? 'selected' : '' }}">
                             <a href="{{ route('setting.index') }}">
                                 <span class="has-icon">
@@ -54,7 +62,6 @@
                                 <span class="nav-title">General Settings</span>
                             </a>
                         </li>
-
                     @endif
                 </ul>
                 <!-- END: side-nav-content -->

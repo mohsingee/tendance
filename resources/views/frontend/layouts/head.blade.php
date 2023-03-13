@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/'.favicon()->front_favicon) }}" type="image/x-icon">
     <!-- <link rel="apple-touch-icon" href="img/logo/favicon.png"> -->
 
     <!-- Plugins -->
@@ -20,5 +20,4 @@
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/custom.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link class="js-stylesheet" href="{{ asset('sweetalert/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
-
 </head>

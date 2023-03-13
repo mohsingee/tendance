@@ -43,6 +43,8 @@ class SettingController extends Controller
         $request->validate([
             'logo' => 'required|mimes:jpeg,png,jpg,gif,svg',
             'favicon' => 'required',
+            'front_logo' => 'required|mimes:jpeg,png,jpg,gif,svg',
+            'front_favicon' => 'required',
             'footer_text' => 'required',
         ]);
         dd($request->all());
@@ -64,10 +66,26 @@ class SettingController extends Controller
             $name1 = time() . rand(1, 99999) . "." . $favicon->getClientOriginalExtension();
             $favicon->move($path1, $name1);
         }
+        if ($request->hasFile('front_logo')) {
+            //
+            $front_logo = $request->file('front_logo');
+            $path_fl = public_path('assets/images');
+            $name_fl = time() . rand(1, 99999) . "." . $front_logo->getClientOriginalExtension();
+            $front_logo->move($path_fl, $name_fl);
+        }
+        if ($request->hasFile('front_favicon')) {
+            //
+            $front_favicon = $request->file('front_favicon');
+            $path_f = public_path('assets/images');
+            $name_f = time() . rand(1, 99999) . "." . $front_favicon->getClientOriginalExtension();
+            $front_favicon->move($path_f, $name_f);
+        }
         
         $settings = Setting::where('id', '1');
         $settings->logo = isset($name) ? $name : "";
         $settings->favicon = isset($name1) ? $name1 : "";
+        $settings->front_logo = isset($name_fl) ? $name_fl : "";
+        $settings->front_favicon = isset($name_f) ? $name_f : "";
         $settings->footer_text = $request->footer_text;
         $settings->save();
 
@@ -108,6 +126,8 @@ class SettingController extends Controller
         $validator = Validator::make($request->all(), [
             'logo' => 'mimes:jpeg,png,jpg,gif,svg',
             'favicon' => 'mimes:jpeg,png,jpg,gif',
+            'front_logo' => 'mimes:jpeg,png,jpg,gif,svg',
+            'front_favicon' => 'mimes:jpeg,png,jpg,gif',
             'footer_text' => 'required',
         ]);
         if ($validator->fails()) {
@@ -131,12 +151,30 @@ class SettingController extends Controller
             $name1 = time() . rand(1, 99999) . "." . $favicon->getClientOriginalExtension();
             $favicon->move($path1, $name1);
         }
+        if ($request->hasFile('front_logo')) {
+            //
+            $front_logo = $request->file('front_logo');
+            $path_fl = public_path('assets/images');
+            $name_fl = time() . rand(1, 99999) . "." . $front_logo->getClientOriginalExtension();
+            $front_logo->move($path_fl, $name_fl);
+        }
+        if ($request->hasFile('front_favicon')) {
+            //
+            $front_favicon = $request->file('front_favicon');
+            $path_f = public_path('assets/images');
+            $name_f = time() . rand(1, 99999) . "." . $front_favicon->getClientOriginalExtension();
+            $front_favicon->move($path_f, $name_f);
+        }
 
         $settings = Setting::where('id', '1')->first();
         if(isset($name) && !empty($name))
             $settings->logo = $name;
         if(isset($name1) && !empty($name1))
             $settings->favicon = $name1;
+        if(isset($name_fl) && !empty($name_fl))
+            $settings->front_logo = $name_fl;
+        if(isset($name_f) && !empty($name_f))
+            $settings->front_favicon = $name_f;
         $settings->footer_text = $request->footer_text;
         $settings->save();
 

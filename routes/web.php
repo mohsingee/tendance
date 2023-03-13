@@ -9,6 +9,7 @@ use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ModuleSettingController;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Route::get('/login-register', [App\Http\Controllers\FrontendController::class, '
 Route::get('/stores', [App\Http\Controllers\FrontendController::class, 'stores'])->name('stores');
 Route::get('/clubtendance', [App\Http\Controllers\FrontendController::class, 'clubtendance'])->name('clubtendance');
 Route::get('/indexopticien', [App\Http\Controllers\FrontendController::class, 'indexopticien'])->name('indexopticien');
+Route::get('/shop-detail/{id}', [App\Http\Controllers\FrontendController::class, 'shopDetail'])->name('shop-detail');
 //Route::redirect('/', 'login');
 
 Route::post('/user-registration', [App\Http\Controllers\FrontendController::class, 'registration_submission'])->name('user-registration');
@@ -59,6 +61,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('admin.profile');
     Route::post('/profile/store', [App\Http\Controllers\HomeController::class, 'storeProfile'])->name('admin.storeProfile');
     Route::get('/change_password', [App\Http\Controllers\HomeController::class, 'change_password'])->name('admin.change_password');
+    
+    Route::resource('shop', ShopController::class);
+    Route::get('delete/{id}', [ShopController::class, 'delete'])->name('shop.delete');
+    Route::post('deleteAll', [ShopController::class, 'deleteAll'])->name('shop.delete-all');
 
     Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user.index');
     Route::get('/user/create', [App\Http\Controllers\UserController::class, 'create'])->name('user.create');

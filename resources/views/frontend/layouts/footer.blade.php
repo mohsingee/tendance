@@ -6,7 +6,7 @@
                 <!-- Start Single Footer -->
                 <div class="col-lg-3 col-sm-6 col-12 mb--50">
                     <div class="footer_widget">
-                        <img src="{{ asset('assets/frontend/img/logo/Logo-Tendance-Optique.png') }}" alt="">
+                        <img src="{{ asset('assets/images/'.favicon()->front_logo) }}" alt="">
                     </div>
                 </div>
                 <!-- End Single Footer -->
