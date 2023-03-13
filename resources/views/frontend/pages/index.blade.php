@@ -10,12 +10,12 @@
 	<section>
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item active"> <img src="{{ asset('assets/img/banner/Slides-Marques01.jpg') }}" class="d-block w-100" alt="..."> </div>
-				<div class="carousel-item"> <img src="{{ asset('assets/img/banner/Slides-Marques05.jpg') }}" class="d-block w-100" alt="..."> </div>
-				<div class="carousel-item"> <img src="{{ asset('assets/img/banner/Slides-Marques07.jpg') }}" class="d-block w-100" alt="..."> </div>
-				<div class="carousel-item"> <img src="{{ asset('assets/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" class="d-block w-100" alt="..."> </div>
-				<div class="carousel-item"> <img src="{{ asset('assets/img/banner/Slides-Tendance01.jpg') }}" class="d-block w-100" alt="..."> </div>
-				<div class="carousel-item"> <img src="{{ asset('assets/img/banner/Slides-Tendance02.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item active"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques01.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques05.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques07.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance01.jpg') }}" class="d-block w-100" alt="..."> </div>
+				<div class="carousel-item"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance02.jpg') }}" class="d-block w-100" alt="..."> </div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
 			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
@@ -32,7 +32,7 @@
 			<div class="col-lg-6 col-xl-3 col-sm-6 col-12">
 				<div class="service item_1">
 					<div class="icon">
-						<a href="#"> <img src="{{ asset('assets/img/icons/ship_icon_1.png') }}" alt="icon"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/icons/ship_icon_1.png') }}" alt="icon"> </a>
 					</div>
 					<div class="content">
 						<h3>Parrainage</h3>
@@ -44,7 +44,7 @@
 			<!-- Start Single -->
 			<div class="col-lg-6 col-xl-3 col-sm-6 col-12">
 				<div class="service item_2">
-					<div class="icon"> <img src="{{ asset('assets/img/icons/ship_icon_2.png') }}" alt="icon"> </div>
+					<div class="icon"> <img src="{{ asset('assets/frontend/img/icons/ship_icon_2.png') }}" alt="icon"> </div>
 					<div class="content">
 						<h3>Nos Produits</h3>
 						<p>Les verres Unifocaux, les verres progressifs, les verres bifocaux : à chaque verre, ses avantages...</p>
@@ -55,7 +55,7 @@
 			<!-- Start Single -->
 			<div class="col-lg-6 col-xl-3 col-sm-6 col-12">
 				<div class="service item_3">
-					<div class="icon"> <img src="{{ asset('assets/img/icons/ship_icon_3.png') }}" alt="icon"> </div>
+					<div class="icon"> <img src="{{ asset('assets/frontend/img/icons/ship_icon_3.png') }}" alt="icon"> </div>
 					<div class="content">
 						<h3>Nos Partenaires</h3>
 						<p>Tendance Optique, c'est un grand réseau de partenaires proposant les marques les plus connues...</p>
@@ -66,7 +66,7 @@
 			<!-- Start Single -->
 			<div class="col-lg-6 col-xl-3 col-sm-6 col-12">
 				<div class="service item_4">
-					<div class="icon"> <img src="{{ asset('assets/img/icons/ship_icon_4.png') }}" alt="icon"> </div>
+					<div class="icon"> <img src="{{ asset('assets/frontend/img/icons/ship_icon_4.png') }}" alt="icon"> </div>
 					<div class="content">
 						<h3>Nos Offres</h3>
 						<p>Votre équipement Monture tendance ou à la mode + Verres aux choix garantis tous risques...</p>
@@ -95,7 +95,7 @@
 		<div class="col-lg-12">
 			<div class="video_block_inner">
 				<div class="thumb">
-					<a href="#"> <img src="{{ asset('assets/img/blog/video_block.jpg') }}" alt="video img" class="w-100"> </a>
+					<a href="#"> <img src="{{ asset('assets/frontend/img/blog/video_block.jpg') }}" alt="video img" class="w-100"> </a>
 				</div>
 				<div class="video__btn">
 					<a class="play__btn" href="https://www.youtube.com/watch?v=jFKUtYbrKUk"> <i class="fa fa-play"></i> </a>
@@ -123,44 +123,21 @@
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/slidereste0.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/slidereste0.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques01.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques01.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques05.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row g-1 m-4">
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques07.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance01.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques05.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
@@ -169,21 +146,44 @@
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance02.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques07.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance11.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/banner-3.png') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance01.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-1 m-4">
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance02.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance11.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/banner-3.png') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
@@ -216,7 +216,7 @@
 				<div class="col-lg-12">
 					<div class="counter_content_inner">
 						<div class="counter_content">
-							<div class="thumb"> <img src="{{ asset('assets/img/banner/Slide-NosProduits.jpg') }}" alt="banner images"> </div>
+							<div class="thumb"> <img src="{{ asset('assets/frontend/img/banner/Slide-NosProduits.jpg') }}" alt="banner images"> </div>
 						</div>
 					</div>
 				</div>
@@ -250,7 +250,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/prada.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/prada.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -259,7 +259,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/diesel.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/diesel.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -268,7 +268,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -277,7 +277,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -288,7 +288,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/prada.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/prada.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -297,7 +297,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/diesel.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/diesel.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -306,7 +306,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -315,7 +315,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -338,7 +338,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/Logo-optovision.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/Logo-optovision.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -347,7 +347,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/Logo-Maitre-Opticien.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/Logo-Maitre-Opticien.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -356,7 +356,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/Logo-SEIKO.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/Logo-SEIKO.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -365,7 +365,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -387,7 +387,7 @@
 			<div class="col-xl-4 col-lg-4 col-sm-6 col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md1.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md1.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC SAINT-PIERRE</a></h3>
@@ -401,7 +401,7 @@
 			<div class="col-xl-4 col-lg-4 col-sm-6 col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md2.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md2.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC LE LORRAIN</a></h3>
@@ -415,7 +415,7 @@
 			<div class="col-xl-4 col-lg-4 col-sm-6 col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md3.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md3.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC GUYANE</a></h3> </div>

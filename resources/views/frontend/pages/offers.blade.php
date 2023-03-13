@@ -34,44 +34,21 @@
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/slidereste0.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/slidereste0.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques01.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques01.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques05.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row g-1 m-4">
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Marques07.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" alt="banner img"> </a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 col-12">
-					<div class="banner">
-						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance01.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques05.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
@@ -80,21 +57,44 @@
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance02.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Marques07.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/Slides-Tendance11.jpg') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance-0-A-CHARGE.jpg') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-sm-6 col-12">
 					<div class="banner">
 						<div class="thumb">
-							<a href="#"> <img src="{{ asset('assets/img/banner/banner-3.png') }}" alt="banner img"> </a>
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance01.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-1 m-4">
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance02.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/Slides-Tendance11.jpg') }}" alt="banner img"> </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-12">
+					<div class="banner">
+						<div class="thumb">
+							<a href="#"> <img src="{{ asset('assets/frontend/img/banner/banner-3.png') }}" alt="banner img"> </a>
 						</div>
 					</div>
 				</div>

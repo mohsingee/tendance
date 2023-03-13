@@ -10,15 +10,15 @@
     <!-- <link rel="apple-touch-icon" href="img/logo/favicon.png"> -->
 
     <!-- Plugins -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/plugins.css') }}">
 
     <!-- Style Css -->
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/custom.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link class="js-stylesheet" href="{{ asset('sweetalert/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
-    
+
 </head>

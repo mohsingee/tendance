@@ -31,7 +31,7 @@
 			<div class="col-xl-8 col-lg-8  col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md1.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md1.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC SAINT-PIERRE</a></h3>
@@ -47,7 +47,7 @@
 			<div class="col-xl-8 col-lg-8 col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md2.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md2.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC LE LORRAIN</a></h3>
@@ -63,7 +63,7 @@
 			<div class="col-xl-8 col-lg-8 col-12 ">
 				<div class="blog">
 					<div class="blog__thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/blog-md3.jpg') }}" alt="blog img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/blog-md3.jpg') }}" alt="blog img"> </a>
 					</div>
 					<div class="blog__content">
 						<h3><a href="#">TENDANCE OPTIC GUYANE</a></h3> </div>

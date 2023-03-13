@@ -6,7 +6,7 @@
                 <!-- Start Single Footer -->
                 <div class="col-lg-3 col-sm-6 col-12 mb--50">
                     <div class="footer_widget">
-                        <img src="{{ asset('assets/img/logo/Logo-Tendance-Optique.png') }}" alt="">
+                        <img src="{{ asset('assets/frontend/img/logo/Logo-Tendance-Optique.png') }}" alt="">
                     </div>
                 </div>
                 <!-- End Single Footer -->
@@ -64,11 +64,11 @@
                         <p>
                             &copy; Tendance Optic <script>document.write(new Date().getFullYear())</script>.
                             Tous droits réservés.
-                            
+
                         </p>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>

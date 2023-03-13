@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="col-xl-5 col-lg-5 col-12">
-				<div class="thumb"> <img src="{{ asset('assets/img/blog/about_welcome.jpg') }}" alt="about img"> </div>
+				<div class="thumb"> <img src="{{ asset('assets/frontend/img/blog/about_welcome.jpg') }}" alt="about img"> </div>
 			</div>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 			<div class="col-lg-12">
 				<div class="video_block_inner">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/blog/video_block.jpg') }}" alt="video img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/blog/video_block.jpg') }}" alt="video img"> </a>
 					</div>
 					<div class="video__btn">
 						<a class="play__btn" href="https://www.youtube.com/watch?v=jFKUtYbrKUk"> <i class="fa fa-play"></i> </a>
@@ -96,17 +96,17 @@
 			<div class="col-lg-12">
 				<div class="testimonial_activation">
 					<!-- Start Single Testimonial -->
-					<div class="testimonial"> <img src="{{ asset('assets/img/blog/clint1.png') }}" alt="testimonial img">
+					<div class="testimonial"> <img src="{{ asset('assets/frontend/img/blog/clint1.png') }}" alt="testimonial img">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<h4>Gregory Cooper</h4> <span>Web Developer</span> </div>
 					<!-- End Single Testimonial -->
 					<!-- Start Single Testimonial -->
-					<div class="testimonial"> <img src="{{ asset('assets/img/blog/clint1.png') }}" alt="testimonial img">
+					<div class="testimonial"> <img src="{{ asset('assets/frontend/img/blog/clint1.png') }}" alt="testimonial img">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<h4>Gregory Cooper</h4> <span>Web Developer</span> </div>
 					<!-- End Single Testimonial -->
 					<!-- Start Single Testimonial -->
-					<div class="testimonial"> <img src="{{ asset('assets/img/blog/clint1.png') }}" alt="testimonial img">
+					<div class="testimonial"> <img src="{{ asset('assets/frontend/img/blog/clint1.png') }}" alt="testimonial img">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<h4>Gregory Cooper</h4> <span>Web Developer</span> </div>
 					<!-- End Single Testimonial -->
@@ -120,28 +120,28 @@
 <div class="instagram_area">
 	<ul class="instagram_list">
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram1.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram1.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram2.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram2.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram3.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram3.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram4.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram4.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram5.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram5.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram3.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram3.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram4.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram4.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 		<li>
-			<a href="#"> <img src="{{ asset('assets/img/banner/instagram5.jpg') }}" alt="instagram1 image"> </a>
+			<a href="#"> <img src="{{ asset('assets/frontend/img/banner/instagram5.jpg') }}" alt="instagram1 image"> </a>
 		</li>
 	</ul>
 </div>

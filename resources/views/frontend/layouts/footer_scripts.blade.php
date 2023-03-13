@@ -1,10 +1,10 @@
 <!-- Js Files -->
-<script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
-<script src="{{ asset('assets/js/vendor/jquery.min.js') }}"></script>
-<script src="{{ asset('assets/js/popper.min.js') }}"></script>
-<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('assets/js/plugins.js') }}"></script>
-<script src="{{ asset('assets/js/main.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/vendor/modernizr-3.6.0.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/vendor/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/plugins.js') }}"></script>
+<script src="{{ asset('assets/frontend/js/main.js') }}"></script>
 <script src="{{ asset('sweetalert/sweetalert2/sweetalert2.min.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 <script>

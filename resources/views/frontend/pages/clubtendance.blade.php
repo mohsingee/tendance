@@ -130,7 +130,7 @@
 										<!-- <option value="Tendance Optic Bouillante">Tendance Optic Bouillante</option>
                                                 <option value="Tendance Optic Le Lorrain">Tendance Optic Le Lorrain</option>
                                                 <option value="Tendance Optic Pointe-à-Pitre">Tendance Optic Pointe-à-Pitre</option>
-                                                <option value="Tendance Optic Sainte-Rose">Tendance Optic Sainte-Rose</option>   
+                                                <option value="Tendance Optic Sainte-Rose">Tendance Optic Sainte-Rose</option>
                                                 <option value="Tendance Optic Saint-Pierre">Tendance Optic Saint-Pierre</option> -->
 									</select>
 								</div>
@@ -139,7 +139,7 @@
 						<div class="row py-4">
 							<p>Afin de nous assurer que le compte créé est celui d'un utilisateur humain, nous vous demandons bien vouloir recopier le champs de sécurité suivant dans la zone ci-dessous: </p>
 							<div class="col-lg-6 col-md-6">
-								<div class="billing-info pt-4 ms-5"> <img src="{{ asset('assets/img/banner/CaptchaSecurityImages.png') }}" class="py-3" alt=""> </div>
+								<div class="billing-info pt-4 ms-5"> <img src="{{ asset('assets/frontend/img/banner/CaptchaSecurityImages.png') }}" class="py-3" alt=""> </div>
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<div class="billing-info">

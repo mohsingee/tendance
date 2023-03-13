@@ -39,7 +39,7 @@
 							<tbody>
 								<tr>
 									<td class="pro-thumbnail">
-										<a href="#"><img src="{{ asset('assets/img/product/product-1.jpg') }}" alt="Product"></a>
+										<a href="#"><img src="{{ asset('assets/frontend/img/product/product-1.jpg') }}" alt="Product"></a>
 									</td>
 									<td class="pro-title"><a href="#">Rinosin Glasses</a></td>
 									<td class="pro-price"><span>$395.00</span></td>
@@ -53,7 +53,7 @@
 								</tr>
 								<tr>
 									<td class="pro-thumbnail">
-										<a href="#"><img src="{{ asset('assets/img/product/product-2.jpg') }}" alt="Product"></a>
+										<a href="#"><img src="{{ asset('assets/frontend/img/product/product-2.jpg') }}" alt="Product"></a>
 									</td>
 									<td class="pro-title"><a href="#">Silacon Glasses</a></td>
 									<td class="pro-price"><span>$275.00</span></td>
@@ -67,7 +67,7 @@
 								</tr>
 								<tr>
 									<td class="pro-thumbnail">
-										<a href="#"><img src="{{ asset('assets/img/product/product-3.jpg') }}" alt="Product"></a>
+										<a href="#"><img src="{{ asset('assets/frontend/img/product/product-3.jpg') }}" alt="Product"></a>
 									</td>
 									<td class="pro-title"><a href="#">Easin Glasses</a></td>
 									<td class="pro-price"><span>$295.00</span></td>
@@ -81,7 +81,7 @@
 								</tr>
 								<tr>
 									<td class="pro-thumbnail">
-										<a href="#"><img src="{{ asset('assets/img/product/product-4.jpg') }}" alt="Product"></a>
+										<a href="#"><img src="{{ asset('assets/frontend/img/product/product-4.jpg') }}" alt="Product"></a>
 									</td>
 									<td class="pro-title"><a href="#">Macrox Glasses</a></td>
 									<td class="pro-price"><span>$220.00</span></td>

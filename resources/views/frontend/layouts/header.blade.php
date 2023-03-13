@@ -5,7 +5,7 @@
                 <div class="col-xl-3 col-lg-2 col-4">
                     <div class="logo">
                         <a href="{{ route('/') }}">
-                            <img src="{{ asset('assets/img/logo/Logo-Tendance-Optique.png') }}" alt="chasmishco Logo">
+                            <img src="{{ asset('assets/frontend/img/logo/Logo-Tendance-Optique.png') }}" alt="chasmishco Logo">
                         </a>
                     </div>
                 </div>
@@ -17,12 +17,12 @@
                                     <li>
                                         <a href="{{ route('login-register') }}">Login</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                             <div class="mini_cat_box">
                                 <div class="shop_cart_icon shop_trigger shopping_basket header-cart">
-                                    <img src="{{ asset('assets/img/icons/icon2.png') }}" alt="icons">
+                                    <img src="{{ asset('assets/frontend/img/icons/icon2.png') }}" alt="icons">
                                     <span class="shop_count">3</span>
                                     <span class="cart_text">Chariot</span>
                                 </div>
@@ -33,23 +33,23 @@
                                 <ul class="main_menu">
                                     <li class="">
                                         <a href="{{ route('offers') }}">Offres</a>
-                                        
+
                                     </li>
                                     <li class="">
                                         <a href="{{ route('brands') }}">Marques</a>
-                                        
+
                                     </li>
                                     <li class="">
                                         <a href="{{ route('stores') }}">Magasins</a>
-                                       
+
                                     </li>
-                                    
+
                                     <li class="drop">
                                         <a href="#">Contact</a>
                                         <ul class="dropdown">
                                             <li><a href="{{ route('contact-us') }}">Contactez-nous</a></li>
-                                            <li><a href="{{ route('login-register') }}">Recrutement</a></li>
-                                           
+                                            <li><a href="{{ route('join-us') }}">Recrutement</a></li>
+
                                         </ul>
                                     </li>
                                     <li>
@@ -97,23 +97,23 @@
         <ul class="main_menu">
             <li class="">
                 <a href="{{ route('offers') }}">Offres</a>
-                
+
             </li>
             <li class="">
                 <a href="{{ route('brands') }}">Marques</a>
-                
+
             </li>
             <li class="">
                 <a href="{{ route('stores') }}">Magasins</a>
-               
+
             </li>
-            
+
             <li class="drop">
                 <a href="#">Contact</a>
                 <ul class="dropdown">
                     <li><a href="{{ route('contact-us') }}">Contactez-nous</a></li>
                     <li><a href="{{ route('login-register') }}">Recrutement</a></li>
-                   
+
                 </ul>
             </li>
             <li>
@@ -138,17 +138,17 @@
         <!-- Mini Cart Products -->
         <ul class="mini-cart-products">
             <li>
-                <a class="image"> <img src="{{ asset('assets/img/product/product-1.jpg') }}" alt="Product"> </a>
+                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-1.jpg') }}" alt="Product"> </a>
                 <div class="content"> <a href="#" class="title">Simple Silacon Glasses</a> <span class="price">Price: $59</span> <span class="qty">Qty: 01</span> </div>
                 <button class="remove"> <i class="fa fa-trash-o"></i> </button>
             </li>
             <li>
-                <a class="image"> <img src="{{ asset('assets/img/product/product-2.jpg') }}" alt="Product"> </a>
+                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-2.jpg') }}" alt="Product"> </a>
                 <div class="content"> <a href="#" class="title">Simple Easin Glasses</a> <span class="price">Price: $20</span> <span class="qty">Qty: 02</span> </div>
                 <button class="remove"> <i class="fa fa-trash-o"></i> </button>
             </li>
             <li>
-                <a class="image"> <img src="{{ asset('assets/img/product/product-3.jpg') }}" alt="Product"> </a>
+                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-3.jpg') }}" alt="Product"> </a>
                 <div class="content"> <a href="#" class="title">Simple Macrox Glasses</a> <span class="price">Price: $320</span> <span class="qty">Qty: 03</span> </div>
                 <button class="remove"> <i class="fa fa-trash-o"></i> </button>
             </li>

@@ -30,7 +30,8 @@
 			<!-- Register Form -->
 			<div class="col-lg-10 md-mt--30 mt--15 sm-mt--30 ">
 				<div class="login-form-wrapper bg-white">
-					<form action="#" class="sn-form sn-form-boxed">
+					<form id="userRegister" class="sn-form sn-form-boxed">
+                        @csrf
 						<div class="row">
 							<div class="col-lg-6 col-md-6">
 								<div class="billing-info">
@@ -50,7 +51,7 @@
 							<div class="col-lg-12 col-md-12">
 								<div class="billing-info">
 									<label class="py-3">Objet du message*</label>
-									<input type="text" name="object_name"> </div>
+									<input type="text" name="subject"> </div>
 							</div>
 							<div class="col-lg-12 col-md-12">
 								<div class="billing-info">
@@ -60,7 +61,7 @@
 							</div>
 							<div class="row">
 								<div class="col justify-content-center text-center">
-									<button class="place-order" type="submi" name="submit">Postuler maintenant</button>
+									<button class="place-order" type="submit" name="submit">Postuler maintenant</button>
 								</div>
 							</div>
 						</div>

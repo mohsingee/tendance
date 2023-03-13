@@ -31,7 +31,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/prada.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/prada.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -40,7 +40,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/diesel.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/diesel.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -69,7 +69,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/prada.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/prada.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/diesel.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/diesel.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/johngaliano.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 			<div class="col-lg-3 col-xl-3 col-sm-6 col-12">
 				<div class="product">
 					<div class="thumb">
-						<a href="#"> <img src="{{ asset('assets/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
+						<a href="#"> <img src="{{ asset('assets/frontend/img/logo/christiandiorparis.jpg') }}" alt="product img"> </a>
 					</div>
 				</div>
 			</div>
