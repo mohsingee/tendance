@@ -18,173 +18,73 @@
 </div>
 <!-- End Bradcaump area -->
 <!-- Checkout Page Start -->
-<div class="checkout_area pt--120 pb--60">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<!-- Checkout Form s-->
-				<form action="#" class="checkout-form">
-					<div class="row">
-						<div class="col-lg-7 mb--20">
-							<!-- Billing Address -->
-							<div id="billing-form" class="mb--40">
-								<h4 class="checkout-title">adresse de facturation</h4>
-								<div class="row">
-									<div class="col-md-6 col-12 mb--20">
-										<label>Prénom*</label>
-										<input type="text" placeholder="Prénom" name="firstname"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Nom de famille*</label>
-										<input type="text" placeholder="Nom de famille" name="lastname"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Adresse e-mail*</label>
-										<input type="email" placeholder="Adresse e-mail" name="email"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Pas de téléphone*</label>
-										<input type="number" placeholder="Phone number" name="phone"> </div>
-									<div class="col-12 mb--20">
-										<label>Nom de l'entreprise</label>
-										<input type="text" placeholder="Nom de l'entreprise" name="comapny_name"> </div>
-									<div class="col-12 mb--20">
-										<label>Adresse*</label>
-										<input type="text" placeholder="Adresse 1" name="address_one">
-										<input type="text" placeholder="Adresse 2" name="address_two"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Country*</label>
-										<select class="nice-select">
-											<option>Bangladesh</option>
-											<option>China</option>
-											<option>country</option>
-											<option>India</option>
-											<option>Japan</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Ville*</label>
-										<input type="text" placeholder="Ville" name="city"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>État*</label>
-										<input type="text" placeholder="État" name="state"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Code postal*</label>
-										<input type="text" placeholder="Code postal" name="postal_code"> </div>
-									<div class="col-12 mb--20">
-										<div class="check-box">
-											<input type="checkbox" id="create_account">
-											<label for="create_account">Create an Acount?</label>
-										</div>
-										<div class="check-box">
-											<input type="checkbox" id="shiping_address" data-shipping>
-											<label for="shiping_address">Ship to Different Address</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Shipping Address -->
-							<div id="shipping-form">
-								<h4 class="checkout-title">Shipping Address</h4>
-								<div class="row">
-									<div class="col-md-6 col-12 mb--20">
-										<label>Prénom*</label>
-										<input type="text" placeholder="Prénom" name="firstname"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Nom de famille*</label>
-										<input type="text" placeholder="Nom de famille" name="lastname"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Adresse e-mail*</label>
-										<input type="email" placeholder="Adresse e-mail" name="email"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Pas de téléphone*</label>
-										<input type="number" placeholder="Phone number" name="phone"> </div>
-									<div class="col-12 mb--20">
-										<label>Nom de l'entreprise</label>
-										<input type="text" placeholder="Nom de l'entreprise" name="comapny_name"> </div>
-									<div class="col-12 mb--20">
-										<label>Adresse*</label>
-										<input type="text" placeholder="Adresse 1" name="address_one">
-										<input type="text" placeholder="Adresse 2" name="address_two"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Country*</label>
-										<select class="nice-select">
-											<option>Bangladesh</option>
-											<option>China</option>
-											<option>country</option>
-											<option>India</option>
-											<option>Japan</option>
-										</select>
-									</div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Ville*</label>
-										<input type="text" placeholder="Ville" name="city"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>État*</label>
-										<input type="text" placeholder="État" name="state"> </div>
-									<div class="col-md-6 col-12 mb--20">
-										<label>Code postal*</label>
-										<input type="text" placeholder="Code postal" name="postal_code"> </div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-5">
-							<div class="row">
-								<!-- Cart Total -->
-								<div class="col-12 mb--60">
-									<h4 class="checkout-title">Cart Total</h4>
-									<div class="checkout-cart-total">
-										<h4>Product <span>Total</span></h4>
-										<ul>
-											<li>Samsome Notebook Pro 5 X 01 <span>$295.00</span></li>
-											<li>Aquet Drone D 420 X 02 <span>$550.00</span></li>
-											<li>Play Station X 22 X 01 <span>$295.00</span></li>
-											<li>Roxxe Headphone Z 75 X 01 <span>$110.00</span></li>
-										</ul>
-										<p>Sub Total <span>$1250.00</span></p>
-										<p>Shipping Fee <span>$00.00</span></p>
-										<h4>Grand Total <span>$1250.00</span></h4> </div>
-								</div>
-								<!-- Payment Method -->
-								<div class="col-12 mb--60">
-									<h4 class="checkout-title">Payment Method</h4>
-									<div class="checkout-payment-method">
-										<div class="single-method">
-											<input type="radio" id="payment_check" name="payment-method" value="check">
-											<label for="payment_check">Check Payment</label>
-											<p data-method="check">Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
-										</div>
-										<div class="single-method">
-											<input type="radio" id="payment_bank" name="payment-method" value="bank">
-											<label for="payment_bank">Direct Bank Transfer</label>
-											<p data-method="bank">Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
-										</div>
-										<div class="single-method">
-											<input type="radio" id="payment_cash" name="payment-method" value="cash">
-											<label for="payment_cash">Cash on Delivery</label>
-											<p data-method="cash">Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
-										</div>
-										<div class="single-method">
-											<input type="radio" id="payment_paypal" name="payment-method" value="paypal">
-											<label for="payment_paypal">Paypal</label>
-											<p data-method="paypal">Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
-										</div>
-										<div class="single-method">
-											<input type="radio" id="payment_payoneer" name="payment-method" value="payoneer">
-											<label for="payment_payoneer">Payoneer</label>
-											<p data-method="payoneer">Please send a Check to Store name with Store Street, Store Town, Store State, Store Postcode, Store Country.</p>
-										</div>
-										<div class="single-method">
-											<input type="checkbox" id="accept_terms">
-											<label for="accept_terms">I’ve read and accept the terms & conditions</label>
-										</div>
-									</div>
-									<button class="place-order">Place order</button>
-								</div>
-							</div>
+<div class="row  justify-content-center">
+	<!-- Register Form -->
+	<div class="col-lg-10 md-mt--30 mt--15 sm-mt--30 ">
+		@if (session()->has('success'))
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			{{ session()->get('success') }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+		@endif
+		<div class="login-form-wrapper bg-white">
+			<form id="orderSubmission" class="sn-form sn-form-boxed">
+				@csrf
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Nom*</label>
+							<input type="text" name="name" required> </div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Email*</label>
+							<input type="email" name="email" required> </div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Téléphone</label>
+							<input type="number" name="phone_number" required> </div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Magasins</label>
+							<select id="template-contactform-service" name="service" class="sm-form-control" required>
+								<option disalbed selected>-- Magasins --</option>
+								<option value="Tendance Optic Bouillante">Tendance Optic Bouillante</option>
+								<option value="Tendance Optic Le Lorrain">Tendance Optic Le Lorrain</option>
+								<option value="Tendance Optic Pointe-à-Pitre">Tendance Optic Pointe-à-Pitre</option>
+								<option value="Tendance Optic Sainte-Rose">Tendance Optic Sainte-Rose</option>
+								<option value="Tendance Optic Saint-Pierre">Tendance Optic Saint-Pierre</option>
+							</select>
 						</div>
 					</div>
-				</form>
-			</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Visit Date*</label>
+							<input type="date" name="visit_date" required> </div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="billing-info">
+							<label class="py-3">Objet du message*</label>
+							<input type="text" name="object_name" required> </div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="billing-info">
+							<label class="py-3">Message*</label>
+							<textarea name="message" id="" cols="30" rows="5" required></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col justify-content-center text-center">
+							<button class="place-order" type="submit" name="submit">Order now</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
+	<!--// Register Form -->
 </div>
 <!-- Checkout Page End -->
 @endsection

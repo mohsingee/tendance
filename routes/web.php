@@ -10,6 +10,8 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\ModuleSettingController;
 use App\Http\Controllers\ShopController;
+use App\Http\Controllers\WishListController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +45,10 @@ Route::get('/shop-detail/{id}', [App\Http\Controllers\FrontendController::class,
 
 Route::post('/user-registration', [App\Http\Controllers\FrontendController::class, 'registration_submission'])->name('user-registration');
 Route::post('/contact-submission', [App\Http\Controllers\FrontendController::class, 'contactSubmission'])->name('contact-submission');
+
+Route::post('add-wishlist', [ProductController::class,'addWishlist']);
+Route::get('show-wishlist', [ProductController::class,'showWishlist']);
+Route::post('order-submit', [ProductController::class,'orderSubmit']);
 
 Route::get('/admin555-login', function () {
     return view('auth.login');

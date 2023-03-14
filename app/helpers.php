@@ -2,6 +2,7 @@
 
 use App\Models\Contact_submissions;
 use Illuminate\Support\Facades\DB;
+use App\Models\Wishlist;
 
 function url_title($str, $separator = '-', $lowercase = FALSE)
 {
@@ -55,4 +56,9 @@ function regionData($region_id)
     } else {
         return false;
     }
+}
+
+function countWishlist(){
+	$ip = $_SERVER['REMOTE_ADDR'];
+    return Wishlist::where('user_ip',$ip)->with('product')->count();
 }

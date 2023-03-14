@@ -21,9 +21,9 @@
                                 </ul>
                             </div>
                             <div class="mini_cat_box">
-                                <div class="shop_cart_icon shop_trigger shopping_basket header-cart">
+                                <div class="shop_cart_icon shop_trigger shopping_basket header-cart" onclick="showWishlist()">
                                     <img src="{{ asset('assets/frontend/img/icons/icon2.png') }}" alt="icons">
-                                    <span class="shop_count">3</span>
+                                    <span class="shop_count">{{ countWishlist() }}</span>
                                     <span class="cart_text">Chariot</span>
                                 </div>
                             </div>
@@ -135,30 +135,8 @@
         <div class="mini-cart-top">
             <button class="close-cart">Close Cart <i class="icofont icofont-close"></i> </button>
         </div>
-        <!-- Mini Cart Products -->
-        <ul class="mini-cart-products">
-            <li>
-                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-1.jpg') }}" alt="Product"> </a>
-                <div class="content"> <a href="#" class="title">Simple Silacon Glasses</a> <span class="price">Price: $59</span> <span class="qty">Qty: 01</span> </div>
-                <button class="remove"> <i class="fa fa-trash-o"></i> </button>
-            </li>
-            <li>
-                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-2.jpg') }}" alt="Product"> </a>
-                <div class="content"> <a href="#" class="title">Simple Easin Glasses</a> <span class="price">Price: $20</span> <span class="qty">Qty: 02</span> </div>
-                <button class="remove"> <i class="fa fa-trash-o"></i> </button>
-            </li>
-            <li>
-                <a class="image"> <img src="{{ asset('assets/frontend/img/product/product-3.jpg') }}" alt="Product"> </a>
-                <div class="content"> <a href="#" class="title">Simple Macrox Glasses</a> <span class="price">Price: $320</span> <span class="qty">Qty: 03</span> </div>
-                <button class="remove"> <i class="fa fa-trash-o"></i> </button>
-            </li>
-        </ul>
-        <!-- Mini Cart Bottom -->
-        <div class="mini-cart-bottom">
-            <h4 class="sub-total">Total:
-                <span>$120</span>
-            </h4>
-            <div class="button"> <a href="{{ route('checkout') }}">CHECKOUT</a> </div>
+        <div id="wishlistShow">
+            <p class="text-center mt-2">No records found.</p>
         </div>
     </div>
     <!-- Mini Cart Wrap End -->
