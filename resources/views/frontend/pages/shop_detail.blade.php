@@ -33,6 +33,7 @@
 					<div class="blog__thumb">
 						<a href="#"> <img src="{{ asset('assets/shop/'.$shop->image) }}" alt="blog img"> </a>
 					</div>
+					<a href="javascript:void(0);" onclick="addWishlist({{ $shop->id }})">Add to Wishlist</a>
 					<div class="blog__content">
 						<p class="">Price: ${{ $shop->price }}</p>
                         <p>{{ $shop->description }}</p>

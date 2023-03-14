@@ -58,7 +58,7 @@ function addWishlist(id){
 	});
 	$.ajax({
 		type: "post",
-		url: "add-wishlist",
+		url: "/add-wishlist",
 		data: {
 			id: id,
 		},
