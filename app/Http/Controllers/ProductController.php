@@ -24,9 +24,11 @@ class ProductController extends Controller
                 'product_id'=>$request->id,
                 'user_ip'=>$ip,
             ]);
+            $count = Wishlist::where('user_ip',$ip)->count();
             return response()->json(array(
                 'data' => true,
                 'message' => 'Product successfully added in wishlist!',
+                'count' => $count,
                 'status' => 'success',
             ));
         }
@@ -35,10 +37,12 @@ class ProductController extends Controller
     public function showWishlist(){
         $ip = $_SERVER['REMOTE_ADDR'];
         $wishlilst = Wishlist::where('user_ip',$ip)->with('product')->get();
-        $html = view('frontend.pages.ajax_load.view_wishlist',compact('wishlilst'))->render();
-        return response()->json(array(
-            'view' => $html
-        ));
+        if(count($wishlilst)>0){
+            $html = view('frontend.pages.ajax_load.view_wishlist',compact('wishlilst'))->render();
+            return response()->json(array(
+                'view' => $html
+            ));
+        }
     }
 
     public function orderSubmit(Request $request){
@@ -74,6 +78,25 @@ class ProductController extends Controller
                 'data' => false,
                 'message' => 'Your wishlist is empty!',
                 'status' => 'error',
+            ));
+        }
+    }
+
+    public function removeWishlist($id){
+        Wishlist::where('id',$id)->delete();
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $wishlilst = Wishlist::where('user_ip',$ip)->with('product')->get();
+        if(count($wishlilst)>0){
+            $html = view('frontend.pages.ajax_load.view_wishlist',compact('wishlilst'))->render();
+            return response()->json(array(
+                'view' => $html,
+                'count' => count($wishlilst)
+            ));
+        }
+        else{
+            return response()->json(array(
+                'view' => '<p class="text-center">No records found.</p>',
+                'count' => count($wishlilst)
             ));
         }
     }

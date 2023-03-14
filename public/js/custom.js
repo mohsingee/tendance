@@ -65,6 +65,7 @@ function addWishlist(id){
 		dataType: "json",
 		success: function (response) {
 			if (response.status == "success") {
+				$('.shop_count').text(response.count);
 				Swal.fire({
 					position: 'top-end',
 					toast: true,
@@ -131,3 +132,20 @@ $("body").on("submit", "#orderSubmission", function (e) {
 		},
 	});
 });
+
+function removeWislist(id){
+	$.ajaxSetup({
+		headers: {
+			"X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+		},
+	});
+	$.ajax({
+		type: "DELETE",
+		url: "remove-wishlist/" + id,
+		dataType: "json",
+		success: function (response) {
+			$('#wishlistShow').html(response.view);
+			$('.shop_count').text(response.count);
+		},
+	});
+}

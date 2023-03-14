@@ -103,7 +103,7 @@
 											<h4><a href="{{ route('shop-detail',$shop->id) }}">{{ $shop->title }}</a></h4>
 											<ul class="cart_action">
 												<li>
-													<a href="javascript:void(0);"><img src="{{ asset('assets/frontend/img/icons/wishlist_icon.png') }}" alt="icons" onclick="addWishlist({{ $shop->id }})"></a>
+													<a href="javascript:void(0);" onclick="addWishlist({{ $shop->id }})"><img src="{{ asset('assets/frontend/img/icons/wishlist_icon.png') }}" alt="icons"></a>
 												</li>
 											</ul>
 										</div>
@@ -139,7 +139,7 @@
 										<p>{{ $shop->description }}</p>
 										<ul class="cart_action">
 											<li>
-												<a href="javascript:void(0);"><img src="{{ asset('assets/frontend/img/icons/wishlist_icon.png') }}" alt="icons" onclick="addWishlist({{ $shop->id }})"></a>
+												<a href="javascript:void(0);" onclick="addWishlist({{ $shop->id }})"><img src="{{ asset('assets/frontend/img/icons/wishlist_icon.png') }}" alt="icons"></a>
 											</li>
 										</ul>
 									</div>

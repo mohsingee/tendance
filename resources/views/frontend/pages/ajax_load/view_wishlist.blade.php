@@ -7,7 +7,7 @@
     <li>
         <a class="image"> <img src="{{ asset('assets/shop/'.$wish->product->image) }}" alt="Product"> </a>
         <div class="content"> <a href="#" class="title">{{ $wish->product->title }}</a> <span class="price">Price: ${{ $wish->product->price }}</span> <span class="qty">Qty: 01</span> </div>
-        <button class="remove"> <i class="fa fa-trash-o"></i> </button>
+        <button class="remove" onclick="removeWislist({{$wish->id}})"> <i class="fa fa-trash-o"></i> </button>
     </li>
     @php
         $sum=$sum+$wish->product->price;

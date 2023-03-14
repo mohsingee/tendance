@@ -49,6 +49,7 @@ Route::post('/contact-submission', [App\Http\Controllers\FrontendController::cla
 Route::post('add-wishlist', [ProductController::class,'addWishlist']);
 Route::get('show-wishlist', [ProductController::class,'showWishlist']);
 Route::post('order-submit', [ProductController::class,'orderSubmit']);
+Route::delete('remove-wishlist/{id}', [ProductController::class,'removeWishlist']);
 
 Route::get('/admin555-login', function () {
     return view('auth.login');
