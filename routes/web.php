@@ -72,11 +72,11 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/change_password', [App\Http\Controllers\HomeController::class, 'change_password'])->name('admin.change_password');
     
     Route::resource('shop', ShopController::class);
-    Route::get('delete/{id}', [ShopController::class, 'delete'])->name('shop.delete');
+    Route::get('shop_delete/{id}', [ShopController::class, 'delete'])->name('shop.delete');
     Route::post('shop/deleteAll', [ShopController::class, 'deleteAll'])->name('shop.delete-all');
 
     Route::resource('orders', OrderController::class);
-    Route::get('delete/{id}', [OrderController::class, 'delete'])->name('orders.delete');
+    Route::get('order_delete/{id}', [OrderController::class, 'delete'])->name('orders.delete');
     Route::post('orders/deleteAll', [OrderController::class, 'deleteAll'])->name('orders.delete-all');
 
     Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user.index');

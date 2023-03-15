@@ -83,7 +83,7 @@ class ShopController extends Controller
             'price'=>$request->price,
             'discounted'=>$request->discounted,
             'image'=>$shop_img,
-            'try-image'=>$try_image,
+            'try_image'=>$try_image,
             'description'=>$request->description,
         ]);
         return redirect()->route('shop.index')->with('success','Product successfully added!');
@@ -155,7 +155,7 @@ class ShopController extends Controller
             'price'=>$request->price,
             'discounted'=>$request->discounted,
             'image'=>$shop_img,
-            'image'=>$try_image,
+            'try_image'=>$try_image,
             'description'=>$request->description,
         ]);
         return redirect()->route('shop.index')->with('success','Product successfully updated!');
