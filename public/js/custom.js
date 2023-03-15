@@ -108,9 +108,14 @@ $("body").on("submit", "#orderSubmission", function (e) {
 		contentType: false,
 		cache: false,
 		processData: false,
+		beforeSend: function () {
+			$('#overlay').show();
+		},
 		success: function (response) {
             $('#orderSubmission')[0].reset();
+			$('#overlay').hide();
 			if (response.status == "success") {
+				$('.shop_count').text(response.count);
 				Swal.fire({
 					position: 'top-end',
 					toast: true,
@@ -121,6 +126,7 @@ $("body").on("submit", "#orderSubmission", function (e) {
 				});
 			}
 			else{
+				$('#overlay').hide();
 				Swal.fire({
 					position: 'top-end',
 					toast: true,
@@ -149,3 +155,63 @@ function removeWislist(id){
 		},
 	});
 }
+
+window.onload = function() {
+  
+	var myFitmixWidget = FitMix.createWidget(
+	'my-fitmix-container',
+
+
+	{ 
+
+		liveAutostart: true ,
+		apiKey: 'TBVAcXitApiZPVH791yxdHbAc8AKzBwtCnjtv6Xn' ,
+		sku: '1702-432988',
+		lang: 'en',
+onSnapshot: onSnapshot
+		
+	},
+
+//onWidgetReady,
+
+		
+
+	function(liveSupported) {
+		   console.log('myFitmixWidget creation complete !');
+		   console.log('Live html5 mode supported : ' +    liveSupported);
+
+ console.log("WIDGET REMOVED");
+ $("#my-fitmix-widget-parent").remove();
+
+   
+   },
+
+);
+
+function getSnapshot () {
+myFitmixWidget.getSnapshot();
+};
+$(document).ready(function(){
+$('#btn').click(function(event){
+getSnapshot();
+});
+});
+
+
+
+// callback to get getSnapshot() result
+function onSnapshot (data) {
+var img = document.getElementById("snapshotImg");
+img.src = data.dataURL;
+FbFitwallJQuery.$(function(){
+ var vPopup = new Fb.Main.Popup({
+	   Popup:{
+			 url: 'img.src',
+			 triggerelementid: 'popup'
+}
+});
+});
+
+};
+};
+

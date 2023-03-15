@@ -9,4 +9,8 @@ class OrderItem extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+
+    public function product(){
+        return $this->belongsTo(Shop::class, 'product_id', 'id');
+    }
 }

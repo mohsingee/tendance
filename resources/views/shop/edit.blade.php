@@ -46,13 +46,13 @@
                             <input type="text" name="title" value="{{ $shop->title }}" class="form-control" id="exampleFormControlInput1" placeholder="Enter title...">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Price</label>
                             <input type="text" name="price" value="{{ $shop->price }}" class="form-control" placeholder="Enter product price">
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Discounted Price</label>
                             <input type="text" name="discounted" value="{{ $shop->discounted }}" class="form-control" placeholder="Enter discounted price">
@@ -64,8 +64,17 @@
                             <input type="file" name="image" class="form-control">
                         </div>
                     </div>
-                    <div class="col-md-1 col-6">
+                    <div class="col-md-2 col-6">
                         <img src="{{ asset('assets/shop/'.$shop->image) }}" alt="" width="80">
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Try Image</label>
+                            <input type="file" name="try_image" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <img src="{{ asset('assets/shop/'.$shop->try_image) }}" alt="" width="80">
                     </div>
                     <div class="col-12">
                         <div class="form-group">

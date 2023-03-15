@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use App\Models\Wishlist;
 use App\Models\Order;
 use App\Models\OrderItem;
+use App\Mail\OrderMail;
+use App\Mail\AdminOrder;
+use App\Models\Shop;
 
 class ProductController extends Controller
 {
@@ -67,9 +70,16 @@ class ProductController extends Controller
                 ]);
             }
             Wishlist::where('user_ip',$ip)->delete();
+            $order = Order::where('id',$order->id)->first();
+
+            \Mail::to($request->email)->send(new OrderMail($order));            
+            \Mail::to(env('MAIL_USERNAME'))->send(new AdminOrder($order));
+
+            $count = Wishlist::where('user_ip',$ip)->count();
             return response()->json(array(
                 'data' => true,
                 'message' => 'Order successfully done!',
+                'count' => $count,
                 'status' => 'success',
             ));
         }
@@ -99,5 +109,10 @@ class ProductController extends Controller
                 'count' => count($wishlilst)
             ));
         }
+    }
+
+    public function tryImage($id){
+        $shop = Shop::find($id);
+        return view('frontend.pages.try-image',compact('shop'));
     }
 }

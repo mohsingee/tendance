@@ -2,6 +2,9 @@
 @section('title','Checkout page')
 @section('main-content')
 <!-- Cart Overlay -->
+<div id="overlay" style="display: none">
+	<img src="{{asset('assets/img/loader1.gif')}}" alt="Loading" /><br/>
+</div>
 <div class="body_overlay"></div>
 <!-- Start Bradcaump area -->
 <div class="bradcaump_area bg_image--4">

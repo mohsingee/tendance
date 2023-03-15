@@ -67,17 +67,23 @@ class ShopController extends Controller
             'title' => 'required',
             'price' => 'required',
             'image' => 'required|mimes:jpeg,png,jpg,gif,svg',
+            'try_image' => 'required|mimes:jpeg,png,jpg,gif,svg',
         ]);
 
         $img = $request->image;
         $shop_img = time() . '-' . $img->getClientOriginalName();
         $img->move(public_path('assets/shop/'),$shop_img);
 
+        $img1 = $request->try_image;
+        $try_image = time() . '-' . $img1->getClientOriginalName();
+        $img1->move(public_path('assets/shop/'),$try_image);
+
         Shop::create([
             'title'=>$request->title,
             'price'=>$request->price,
             'discounted'=>$request->discounted,
             'image'=>$shop_img,
+            'try-image'=>$try_image,
             'description'=>$request->description,
         ]);
         return redirect()->route('shop.index')->with('success','Product successfully added!');
@@ -118,6 +124,7 @@ class ShopController extends Controller
         $request->validate([
             'title' => 'required',
             'image' => 'mimes:jpeg,png,jpg,gif,svg',
+            'try_image' => 'mimes:jpeg,png,jpg,gif,svg',
             'price' => 'required',
         ]);
 
@@ -132,12 +139,23 @@ class ShopController extends Controller
         }else{
             $shop_img = $shop->image;
         }
+        if($request->try_image){
+            $isExists = File::exists('assets/shop/'.$shop->try_image);
+            if ($isExists == true) {
+                File::delete(public_path('assets/shop/' . $shop->try_image));
+            }
+            $try_image = time() . rand(1, 99999). "." . $request->try_image->getClientOriginalExtension();
+            $request->try_image->move(public_path('assets/shop/'),$try_image);
+        }else{
+            $try_image = $shop->try_image;
+        }
 
         Shop::where('id',$id)->update([
             'title'=>$request->title,
             'price'=>$request->price,
             'discounted'=>$request->discounted,
             'image'=>$shop_img,
+            'image'=>$try_image,
             'description'=>$request->description,
         ]);
         return redirect()->route('shop.index')->with('success','Product successfully updated!');

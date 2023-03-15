@@ -12,6 +12,7 @@ use App\Http\Controllers\ModuleSettingController;
 use App\Http\Controllers\ShopController;
 use App\Http\Controllers\WishListController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,7 @@ Route::post('/contact-submission', [App\Http\Controllers\FrontendController::cla
 Route::post('add-wishlist', [ProductController::class,'addWishlist']);
 Route::get('show-wishlist', [ProductController::class,'showWishlist']);
 Route::post('order-submit', [ProductController::class,'orderSubmit']);
+Route::get('try-image/{id}', [ProductController::class,'tryImage'])->name('try-image');
 Route::delete('remove-wishlist/{id}', [ProductController::class,'removeWishlist']);
 
 Route::get('/admin555-login', function () {
@@ -72,6 +74,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('shop', ShopController::class);
     Route::get('delete/{id}', [ShopController::class, 'delete'])->name('shop.delete');
     Route::post('deleteAll', [ShopController::class, 'deleteAll'])->name('shop.delete-all');
+
+    Route::resource('orders', OrderController::class);
+    Route::get('delete/{id}', [OrderController::class, 'delete'])->name('orders.delete');
+    Route::post('deleteAll', [OrderController::class, 'deleteAll'])->name('orders.delete-all');
 
     Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user.index');
     Route::get('/user/create', [App\Http\Controllers\UserController::class, 'create'])->name('user.create');

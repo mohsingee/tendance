@@ -20,4 +20,20 @@
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/custom.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link class="js-stylesheet" href="{{ asset('sweetalert/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
+    <style>
+        #overlay {
+        background:rgba(0,0,0,0.8);
+        color: #fff;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 5000;
+        top: 0;
+        left: 0;
+        float: left;
+        text-align: center;
+        padding-top: 20%;
+        filter: blur(1px);
+    }
+    </style>
 </head>

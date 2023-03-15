@@ -54,6 +54,14 @@
                                 <span class="nav-title">Essayage</span>
                             </a>
                         </li>
+                        <li class="{{ Route::is('orders.index ') ? 'selected' : '' }}">
+                            <a href="{{ route('orders.index') }}">
+                                <span class="has-icon">
+                                    <i class="icon-text"></i>
+                                </span>
+                                <span class="nav-title">Orders</span>
+                            </a>
+                        </li>
                         <li class="{{ Route::is('setting.index') ? 'selected' : '' }}">
                             <a href="{{ route('setting.index') }}">
                                 <span class="has-icon">
